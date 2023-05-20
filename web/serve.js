@@ -1,7 +1,7 @@
 const exp = require('express');
 const app = exp();
 
-app.use(exp.static(__dirname + '/web'))
+app.use(exp.static(__dirname))
 app.get('/', (req, res) =>{
     res.sendFile(__dirname + '/index.html');
 
